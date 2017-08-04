@@ -137,7 +137,7 @@ enum SwiftyRSA {
             
             let sizeInBits = keyData.count * 8
             let keyDict: [CFString: Any] = [
-                kSecAttrKeyType: kSecAttrKeyTypeRSA,
+                kSecAttrKeyType: kSecAttrKeyTypeEC,
                 kSecAttrKeyClass: keyClass,
                 kSecAttrKeySizeInBits: NSNumber(value: sizeInBits),
                 kSecReturnPersistentRef: true
