@@ -132,6 +132,7 @@ enum SwiftyRSA {
         
         let keyClass = isPublic ? kSecAttrKeyClassPublic : kSecAttrKeyClassPrivate
         
+        NSLog("lol in here")
         // On iOS 10+, we can use SecKeyCreateWithData without going through the keychain
         if #available(iOS 10.0, *), #available(watchOS 3.0, *), #available(tvOS 10.0, *) {
             
